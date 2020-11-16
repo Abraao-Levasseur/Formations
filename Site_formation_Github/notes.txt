@@ -1,0 +1,32 @@
+git add . pour indexer toutes les modifications
+git add + le nom du fichier pour indexer que ce fichier
+
+git diff le nom du fichier pour voir les modifications du fichier
+git diff sans non derrières va donner toutes les modifications
+
+git commit -m"ici le commentaire pour dire ce qui a changé"
+
+git status pour savoir ce qui reste à indexer ou à lancer en commit
+
+git log renvoi toutes les modifications faites sur chaque SHA-1
+git log -n 2 renvoi les deux dernières modifications mais ne dit pas ce qui a été modifié
+
+Pour voir les modifications du SHA-1 
+git show SHA-1
+double clic sur le SHA-1 + clic de molette après show
+
+git show master renvoi les modifications de la branche master cad la dernière modification
+git show nom du tag ne renvoi pas à la version mais affiche les modifications opérées sur le SHA-1 attaché à ce tag
+
+======= Pour se déplacer dans les versions
+
+git checkout SHA-1
+ça envoi dans le workspace la version des fichier du SHA-1 demandé
+
+// préalablement on se déplace dans le commit qui nous interesse avec git checkout
+git tag nom du tag -m"un commentaire"
+git tag -- delete nom du tag
+
+permet d'utiliser la commande
+git checkout le nom du tag pour retourner dans la version que l'on souhaite
+
