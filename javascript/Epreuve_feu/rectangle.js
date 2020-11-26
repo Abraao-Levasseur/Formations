@@ -33,8 +33,9 @@ function correspondance1(tableau1_, tableau2_){
     for (let ligne = 0; ligne < tableau2_.length; ligne++){
         for ( let colonne = 0; colonne < tableau2_[ligne].length; colonne++){
            if(tableau1_[0][0] === tableau2_[ligne][colonne]){
+            //console.log(ligne +"|"+ colonne)   
                 if(correspondance2(tableau1_, tableau2_, ligne, colonne)){
-                    return 1
+                return 1
                 }
            }
         }
